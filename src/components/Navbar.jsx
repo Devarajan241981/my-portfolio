@@ -5,7 +5,6 @@ import { close, logo, menu } from "../assets";
 import {
   navLinks,
   navigationPaths,
-  personalInfo,
   publicUrls,
 } from "../constants";
 
@@ -27,12 +26,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            {personalInfo.name} &nbsp;
-            <span className="lg:block hidden">| {personalInfo.role}</span>{" "}
-            &nbsp;
-            <span className="lg:block hidden">| {personalInfo.mobile}</span>
-          </p>
+          {/* Name/role/mobile removed from here */}
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -47,13 +41,12 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
-
           <li
             className={`text-secondary text-[18px] font-medium cursor-pointer hover:text-white`}
           >
             <a
               href={publicUrls.resume}
-              download="Shridhar_Rai_Resume.pdf"
+              download="Jai_Devarajan_Resume.pdf"
               target="_blank"
             >
               Resume
@@ -68,7 +61,6 @@ const Navbar = () => {
             className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
-
           <div
             className={`${
               !toggle ? "hidden" : "flex"
@@ -89,7 +81,6 @@ const Navbar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
-
               <li
                 className={`text-secondary text-[18px] font-medium cursor-pointer hover:text-white`}
               >

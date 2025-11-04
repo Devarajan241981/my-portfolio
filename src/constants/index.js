@@ -17,21 +17,14 @@ import {
   java,
   mysql,
   git,
-  monster,
-  crmnext,
-  nickelfox,
-  newgen,
-  skillrisers,
-  proximus,
-  aptihealthWeb,
-  aptihealthApp,
-  zealWeb,
-  zealApp,
-  rollWeb,
-  rollApp,
   linkedIn,
   github,
 } from "../assets";
+
+import fuelDelivery from "../assets/projects/fuel_delivery.png";
+import studentShowcase from "../assets/projects/student_showcase.png";
+import aura999 from "../assets/projects/aura999.png";
+import confidentialComputing from "../assets/projects/confidential_computing.png";
 
 const navigationPaths = {
   home: "/",
@@ -41,345 +34,133 @@ const navigationPaths = {
 };
 
 export const navLinks = [
-  {
-    id: navigationPaths.about,
-    title: "About",
-  },
-  {
-    id: navigationPaths.work,
-    title: "Work",
-  },
-  {
-    id: navigationPaths.contact,
-    title: "Contact",
-  },
+  { id: navigationPaths.about, title: "About" },
+  { id: navigationPaths.work, title: "Experience" },
+  { id: navigationPaths.contact, title: "Contact" },
 ];
 
 const services = [
-  {
-    title: "React Developer",
-    icon: web,
-  },
-  {
-    title: "NextJs Developer",
-    icon: creator,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "NodeJs Developer",
-    icon: backend,
-  },
+  { title: "Web Developer", icon: web },
+  { title: "Java Developer", icon: java },
+  { title: "React Developer", icon: reactjs },
+  { title: "Backend Developer", icon: backend },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Next JS",
-    icon: nextJs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Angular",
-    icon: angular,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Java",
-    icon: java,
-  },
-  {
-    name: "MySQL",
-    icon: mysql,
-  },
-  {
-    name: "Git",
-    icon: git,
-  },
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
+  { name: "JavaScript", icon: javascript },
+  { name: "Java", icon: java },
+  { name: "Python", icon: typescript },
+  { name: "React JS", icon: reactjs },
+  { name: "Node JS", icon: nodejs },
+  { name: "MongoDB", icon: mongodb },
+  { name: "MySQL", icon: mysql },
+  { name: "Git", icon: git },
 ];
 
-const experiences = [
+const experience = [
   {
-    title: "Software Engineer II",
-    company_name: "Monster + CareerBuilder",
-    company_website: "https://www.linkedin.com/company/monster/about/",
-    icon: monster,
+    title: "B.E. Computer Science Engineering",
+    institution: "S.E.A College of Engineering",
+    icon: creator,
     iconBg: "#E6DEDD",
-    date: "Feb 2025 - Present",
+    date: "Oct 2022 – Present",
     points: [
-      "Enhanced the employer job portal with job posting, applicant tracking, multi-user access, and subscription model.",
-      "Integrated AI-Agents for job posting, applicant insights, job-candidate matching reducing recruiter effort by 80%.",
-      "Worked on AI Interview Agent to schedule automated interviews, targeting a 50% reduction in recruiter efforts.",
-      "Worked across AWS (Lambda, SQS, SNS, S3, KDS, DynamoDB, Elasticsearch) and monitoring tools like Splunk.",
+      "Currently pursuing degree in Computer Science & Engineering.",
+      "Active in college hackathons and technical events."
     ],
   },
   {
-    title: "Software Engineer",
-    company_name: "Crmnext",
-    company_website: "https://www.businessnext.com/crm",
-    icon: crmnext,
+    title: "PUC — PCMB",
+    institution: "RK Vision PU College",
+    icon: creator,
     iconBg: "#E6DEDD",
-    date: "Nov 2023 - Dec 2024",
+    date: "April 2022 | 75% CGPA",
     points: [
-      "Developed Flow and Layout Designers for HDFC, PNB, IOB, and Utkarsh Bank.",
-      "Boosted team efficiency by 50% by implementing monorepo architecture and reusable Design-System.",
-      "Integrated GenAI models to automate flow creation from user prompts, eliminating manual configuration efforts.",
-      "Integrated unit testing with 80% code coverage, enhancing code reliability and reducing bugs.",
+      "Completed core science subjects with strong results."
     ],
   },
   {
-    title: "Software Engineer",
-    company_name: "Nickelfox Technologies",
-    company_website: "https://www.nickelfox.com/",
-    icon: nickelfox,
+    title: "10th Class",
+    institution: "Ravindra Bharathi School",
+    icon: creator,
     iconBg: "#E6DEDD",
-    date: "Jan 2022 - Nov 2023",
+    date: "March 2020 | 98% CGPA",
     points: [
-      "Developing and maintaining web and mobile applications using React.js, React-native and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Software Developer",
-    company_name: "Newgen Software",
-    company_website: "https://newgensoft.com/home-india/",
-    icon: newgen,
-    iconBg: "#E6DEDD",
-    date: "Mar 2021 - Dec 2021",
-    points: [
-      "Developed a groundbreaking banking product for a Singapore-based firm, improved transaction management.",
-      "Developed a dynamic dashboard for efficient transaction management, resulting in a 30% increase in productivity.",
-      "Optimized frontend performance by achieving 20% reduction in page loading time and make it responsive.",
-      "Created a transaction report generator, reducing report generation time by 50% and enhancing data analysis.",
-    ],
-  },
-  {
-    title: "Software Engineer Intern",
-    company_name: "Skillrisers",
-    company_website: "https://www.skillrisers.com/",
-    icon: skillrisers,
-    iconBg: "#E6DEDD",
-    date: "Jan 2020 - Jul 2020",
-    points: [
-      "Contributed to the development of a Test Engine Application, empowering users to create and conduct tests seamlessly.",
-      "Built three essential modules: Teacher, Student, and Admin, ensuring comprehensive functionality for all user roles.",
-      "Collaborated effectively with the development team, actively participating in code reviews and resolving technical challenges.",
-      "Demonstrated strong problem-solving skills, consistently delivering high-quality code and meeting project deadlines.",
-    ],
-  },
-  {
-    title: "Frontend Developer",
-    company_name: "Self-employed",
-    company_website: "https://proximus.surge.sh/index.html",
-    icon: proximus,
-    iconBg: "#E6DEDD",
-    date: "Jan 2018 - Jan 2021",
-    points: [
-      "Spearheaded the development of a fully responsive website for the college coding society.",
-      "Led coding sessions, actively sharing knowledge and insights to enrich members' programming skills and understanding.",
-      "Organized informative sessions on cutting-edge technologies, including JavaScript and ReactJs.",
-      "Curated and designed challenging coding problems for college competitions.",
+      "Achieved top scores in board examinations."
     ],
   },
 ];
 
 const projects = [
   {
-    name: "Aptihealth Web",
-    description:
-      "Revolutionizing mental healthcare in New York State with a user-friendly platform for personalized therapy and progress tracking. Provides the digital gateway to comprehensive behavioral healthcare.",
+    name: "FUELnow - Fuel Delivery platform",
+    description: "Developed a platform for requesting fuel delivery with secure payment gateway and user management. Built with MERN stack (Reactjs, Java, Node.js, MongoDB).",
     tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux",
-        color: "green-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "java", color: "green-text-gradient" },
+      { name: "node.js", color: "pink-text-gradient" },
+      { name: "mongodb", color: "orange-text-gradient" },
     ],
-    image: aptihealthWeb,
-    hosted_link: "https://www.aptihealth.com/",
+    image: fuelDelivery,
+    hosted_link: "https://github.com/Devarajan241981/FUELnow"
   },
   {
-    name: "Aptihealth App",
-    description:
-      "Access top-notch mental healthcare anytime, anywhere in New York State with our innovative app. Track your progress, schedule appointments, and connect with expert therapists for personalized care.",
+    name: "Student Project Showcase Application",
+    description: "A site for students to share academic projects. Frontend: HTML, CSS, JavaScript. Backend: Java, MySQL.",
     tags: [
-      {
-        name: "react-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sendbird",
-        color: "green-text-gradient",
-      },
-      {
-        name: "twilio",
-        color: "pink-text-gradient",
-      },
+      { name: "java", color: "blue-text-gradient" },
+      { name: "mysql", color: "green-text-gradient" }
     ],
-    image: aptihealthApp,
-    hosted_link: "https://apps.apple.com/us/app/aptihealth/id1477170874",
+    image: studentShowcase,
+    hosted_link: "#"
   },
   {
-    name: "Zeal Web",
-    description:
-      "The Zeal website elevates the experience of enjoying activities with trusted friends, fostering connections and making every interaction exciting.",
+    name: "AURA 999 Digital Magazine",
+    description: "Created a student showcase magazine using Flip HTML5, Adobe InDesign for projects and achievements.",
     tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "pink-text-gradient",
-      },
+      { name: "FlipHTML5", color: "blue-text-gradient" },
+      { name: "AdobeInDesign", color: "pink-text-gradient" }
     ],
-    image: zealWeb,
-    hosted_link: "https://getzeal.co/",
+    image: aura999,
+    hosted_link: "#"
   },
   {
-    name: "Zeal App",
-    description:
-      "Discover a world of activities with friends through Zeal, an engaging platform. Create events, post updates, chat, and enjoy in-person activities hassle-free. Boost your social life with Zeal!",
+    name: "Confidential Computing with Encrypted VMs",
+    description: "Built a full-stack stock trading platform with confidential computing using Azure and encrypted key generation.",
     tags: [
-      {
-        name: "react-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sendgrid",
-        color: "green-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "pink-text-gradient",
-      },
+      { name: "azure", color: "blue-text-gradient" },
+      { name: "nodejs", color: "green-text-gradient" }
     ],
-    image: zealApp,
-    hosted_link:
-      "https://apps.apple.com/us/app/zeal-activities-with-friends/id6446917140",
-  },
-  {
-    name: "Roll Web",
-    description:
-      "The Roll website is the gateway to the future of decentralized communities and digital assets. It allows users to seamlessly earn, redeem, send, and trade social tokens.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "green-text-gradient",
-      },
-      {
-        name: "formik",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: rollWeb,
-    hosted_link: "https://app.tryroll.com/",
-  },
-  {
-    name: "Roll App",
-    description:
-      "Join the future of decentralized communities and digital assets with Roll. Earn, redeem, send, and trade social tokens on this innovative platform. Experience transparent transactions and captivating UI design.",
-    tags: [
-      {
-        name: "react-native-web",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "green-text-gradient",
-      },
-      {
-        name: "storybook",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: rollApp,
-    hosted_link:
-      "https://play.google.com/store/apps/details?id=com.roll&hl=en_GB",
-  },
+    image: confidentialComputing,
+    hosted_link: "#"
+  }
 ];
 
 const personalInfo = {
-  name: "Shridhar",
-  fullName: "Shridhar Rai",
-  email: "raishridhar619@gmail.com",
-  mobile: "9319751819",
-  role: "Senior Software Developer",
-  about: `I'm a skilled software developer with experience in TypeScript and
-  JavaScript, and expertise in frameworks like React.Js, Next.Js, React-naitve,
-  Node.js etc. I'm a quick learner and collaborate closely with clients to
-  create efficient, scalable, and user-friendly solutions that solve
-  real-world problems. Let's work together to bring your ideas to life!`,
-  projectsIntro: `Following projects showcases my skills and experience through
-  real-world examples of my work. Each project is briefly described with
-  live demos. It reflects my ability to solve complex problems, work
-  with different technologies, and manage projects effectively.`,
+  name: "Jai Chandra Kumar Devarajan",
+  fullName: "Jai Chandra Kumar Devarajan",
+  email: "devarajanchandu@gmail.com",
+  mobile: "9663397727",
+  role: "Full Stack Developer",
+  about: `Software with purpose.
+
+Passionate about building efficient, modern web applications and contributing to innovative projects. Eager to keep learning and growing in the field of computer science and technology.`,
+  projectsIntro: `Following projects showcase my skills and experience through real-world examples. Each project is briefly described and features live demos (where available).`,
 };
 
 const publicUrls = {
-  resume:
-    "https://drive.google.com/file/d/1cbDow8j2FWFH71fGGYyypBN5ObvFSK0G/view?usp=sharing",
+  resume: "/resume.pdf",
   socialProfiles: {
     linkedin: {
       title: "linkedin",
-      link: "https://www.linkedin.com/in/shridharrai/",
+      link: "https://www.linkedin.com/in/devarajan241981",
       icon: linkedIn,
     },
     github: {
       title: "github",
-      link: "https://github.com/shridharrai",
+      link: "https://github.com/Devarajan241981",
       icon: github,
     },
   },
@@ -388,7 +169,7 @@ const publicUrls = {
 export {
   services,
   technologies,
-  experiences,
+  experience,
   projects,
   navigationPaths,
   personalInfo,

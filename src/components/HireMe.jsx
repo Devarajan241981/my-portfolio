@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { personalInfo } from "../constants";
 
 const HireMe = () => {
   return (
@@ -13,10 +12,12 @@ const HireMe = () => {
     >
       <div className="w-24 h-24 relative">
         <div className="border-t-4 border-blue-500 border-solid rounded-full animate-spin absolute inset-0"></div>
+        {/* WhatsApp link */}
         <a
-          href={`mailto:${personalInfo.email}`}
+          href="https://wa.me/919663397727"
           className="flex justify-center items-center absolute left-4 top-4 green-pink-gradient w-16 h-16 rounded-full"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <span className="text-white text-[14px] p-1 font-bold">Hire Me</span>
         </a>

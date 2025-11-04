@@ -35,23 +35,20 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        "service_ei9yju5",
+        "template_02l4wvv",
         {
-          from_name: form.name,
-          to_name: personalInfo.fullName,
-          from_email: form.email,
-          to_email: personalInfo.email,
+          name: form.name,
+          email: form.email,
           message: form.message,
-          reply_to: form.email,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "e6D4_82cQbLsRA_tc"
       )
       .then(
         () => {
           setModalContent({
             title: "Success!",
-            message: "Thank you. I will get back to you as soon as possilbe.",
+            message: "Thank you. I will get back to you as soon as possible.",
             buttonText: "Ok",
           });
           setIsModalVisible(true);
@@ -101,13 +98,11 @@ const Contact = () => {
               );
             })}
           </div>
-
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={styles.sectionHeadText}>Contact.</h3>
           <p className={`${styles.sectionSubText} lowercase`}>
             {personalInfo.email}
           </p>
-
           <form
             ref={formRef}
             onSubmit={handleSubmit}
@@ -122,9 +117,9 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="What's your good name?"
                 className="bg-tertiary py-4 px-6 text-white placeholder:text-secondary rounded-lg outline-none border-none font-medium"
+                required
               />
             </label>
-
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your Email</span>
               <input
@@ -134,9 +129,9 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="What's your web address?"
                 className="bg-tertiary py-4 px-6 text-white placeholder:text-secondary rounded-lg outline-none border-none font-medium"
+                required
               />
             </label>
-
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your Message</span>
               <textarea
@@ -144,11 +139,11 @@ const Contact = () => {
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="What's you want to say?"
+                placeholder="What do you want to say?"
                 className="bg-tertiary py-4 px-6 text-white placeholder:text-secondary rounded-lg outline-none border-none font-medium"
+                required
               />
             </label>
-
             <button
               type="submit"
               className="bg-tertiary py-3 px-8 rounded-xl outline-none text-white font-bold w-fit shadow-md shadow-primary"
@@ -157,7 +152,6 @@ const Contact = () => {
             </button>
           </form>
         </motion.div>
-
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"

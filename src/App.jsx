@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Education from "./components/Education"; 
 import Experience from "./components/Experience";
 import Tech from "./components/Tech";
 import Works from "./components/Works";
@@ -18,6 +19,7 @@ const App = () => {
           <Hero />
         </div>
         <About />
+        <Education /> {/* <-- Education Section Here */}
         <Experience />
         <Tech />
         <Works />
