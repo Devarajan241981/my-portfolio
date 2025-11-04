@@ -19,9 +19,10 @@ Welcome to my creative 3D portfolio website! Leveraging modern web technologies 
 - **Contact Section**: Reach out instantly (customizable for job/contact info).
 - **Fast Loading**: Optimized with code-splitting and Suspense for performance.
 
-## 🌐 Live Demo
-Coming soon!  
-(Or, replace this line with your own Netlify/GitHub Pages/Vercel URL)
+## 🚀 Live Demo
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-orange?style=for-the-badge&logo=github)](https://devarajan241981.github.io/my-portfolio/)
+
 
 ## 🛠️ Usage
 Kickstart your personal 3D portfolio:
