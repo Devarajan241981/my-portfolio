@@ -1,6 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="999" viewBox="0 0 1000 999">
   <g>
-    ircle cx="500" cy="499.5" r="450" fill="#ee3e3e38" />
-    <text x="500" y="580" text-anchor="middle" fill="#ffffff" font-size="320" font-family="Arial, Helvetica, sans-serif" font-weight="bold" dominant-baseline="middle">JCK</text>
+    <circle cx="500" cy="499.5" r="450" fill="#ff9900" />
+    <text x="500" y="580" text-anchor="middle" fill="#ffffff" font-size="320" font-family="Arial, Helvetica, sans-serif" font-weight="bold" dominant-baseline="middle">
+      JCK
+    </text>
   </g>
 </svg>
