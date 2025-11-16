@@ -9,6 +9,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import demo from "./demo.png";
 
+// Tech icons
 import css from "./tech/css.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -19,11 +20,10 @@ import java from "./tech/java.png";
 import mysql from "./tech/mysql.png";
 import reactjs from "./tech/reactjs.png";
 import nextJs from "./tech/nextjs.svg";
-// ❌ removed angular
-// ❌ removed redux
 import tailwind from "./tech/tailwind.png";
-// ❌ removed typescript
-import python from "./tech/python.png";
+
+// ✅ Updated Python icon
+import python from "./tech/pythonlogo.png";
 
 export {
   logo,
