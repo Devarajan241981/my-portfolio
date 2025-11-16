@@ -23,7 +23,8 @@ import nextJs from "./tech/nextjs.svg";
 import tailwind from "./tech/tailwind.png";
 
 // ✅ NEW — Correct Python icon
-import python from "./tech/pythonlogo.png";
+import python from "./tech/python_icon_v2.png";
+
 
 
 export {
