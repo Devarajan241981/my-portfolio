@@ -4,14 +4,9 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  nextJs,
-  redux,
-  tailwind,
-  angular,
   nodejs,
   mongodb,
   java,
@@ -47,6 +42,7 @@ const services = [
   { title: "Backend Developer", icon: backend },
 ];
 
+// ✅ Final cleaned technology list (ONLY the skills you want)
 const technologies = [
   { name: "HTML 5", icon: html },
   { name: "CSS 3", icon: css },
@@ -69,7 +65,7 @@ const experience = [
     date: "Oct 2022 – Present",
     points: [
       "Currently pursuing degree in Computer Science & Engineering.",
-      "Active in college hackathons and technical events."
+      "Active in college hackathons and technical events.",
     ],
   },
   {
@@ -78,9 +74,7 @@ const experience = [
     icon: creator,
     iconBg: "#E6DEDD",
     date: "April 2022 | 75% CGPA",
-    points: [
-      "Completed core science subjects with strong results."
-    ],
+    points: ["Completed core science subjects with strong results."],
   },
   {
     title: "10th Class",
@@ -88,9 +82,7 @@ const experience = [
     icon: creator,
     iconBg: "#E6DEDD",
     date: "March 2020 | 98% CGPA",
-    points: [
-      "Achieved top scores in board examinations."
-    ],
+    points: ["Achieved top scores in board examinations."],
   },
 ];
 
