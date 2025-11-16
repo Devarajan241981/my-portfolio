@@ -7,6 +7,8 @@ import {
   html,
   css,
   reactjs,
+  nextJs,
+  angular,
   nodejs,
   mongodb,
   java,
@@ -42,7 +44,6 @@ const services = [
   { title: "Backend Developer", icon: backend },
 ];
 
-// ✅ Final cleaned technology list (ONLY the skills you want)
 const technologies = [
   { name: "HTML 5", icon: html },
   { name: "CSS 3", icon: css },
@@ -65,7 +66,7 @@ const experience = [
     date: "Oct 2022 – Present",
     points: [
       "Currently pursuing degree in Computer Science & Engineering.",
-      "Active in college hackathons and technical events.",
+      "Active in college hackathons and technical events."
     ],
   },
   {
@@ -74,7 +75,9 @@ const experience = [
     icon: creator,
     iconBg: "#E6DEDD",
     date: "April 2022 | 75% CGPA",
-    points: ["Completed core science subjects with strong results."],
+    points: [
+      "Completed core science subjects with strong results."
+    ],
   },
   {
     title: "10th Class",
@@ -82,7 +85,9 @@ const experience = [
     icon: creator,
     iconBg: "#E6DEDD",
     date: "March 2020 | 98% CGPA",
-    points: ["Achieved top scores in board examinations."],
+    points: [
+      "Achieved top scores in board examinations."
+    ],
   },
 ];
 
@@ -90,7 +95,7 @@ const projects = [
   {
     name: "FUELnow - Fuel Delivery platform",
     description:
-      "Developed a platform for requesting fuel delivery with secure payment gateway and user management. Built with MERN stack (Reactjs, Java, Node.js, MongoDB).",
+      "Developed a platform for requesting fuel delivery with secure payment gateway and user management.",
     tags: [
       { name: "react", color: "blue-text-gradient" },
       { name: "java", color: "green-text-gradient" },
@@ -114,7 +119,7 @@ const projects = [
   {
     name: "AURA 999 Digital Magazine",
     description:
-      "Created a student showcase magazine using Flip HTML5 and Adobe InDesign for projects and achievements.",
+      "Created a student showcase magazine using Flip HTML5 and Adobe InDesign.",
     tags: [
       { name: "FlipHTML5", color: "blue-text-gradient" },
       { name: "AdobeInDesign", color: "pink-text-gradient" },
@@ -125,7 +130,7 @@ const projects = [
   {
     name: "Confidential Computing with Encrypted VMs",
     description:
-      "Built a full-stack stock trading platform with confidential computing using Azure and encrypted key generation.",
+      "Stock trading platform using Azure confidential computing.",
     tags: [
       { name: "azure", color: "blue-text-gradient" },
       { name: "nodejs", color: "green-text-gradient" },
@@ -143,7 +148,7 @@ const personalInfo = {
   role: "Full Stack Developer",
   about: `Software with purpose.
 
-Passionate about building efficient, modern web applications and contributing to innovative projects. Eager to keep learning and growing in the field of computer science and technology.`,
+Passionate about building efficient, modern web applications and contributing to innovative projects.`,
   projectsIntro: `Following projects showcase my skills and experience through real-world examples.`,
 };
 
