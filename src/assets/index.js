@@ -9,6 +9,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import demo from "./demo.png";
 
+// Tech icons
 import css from "./tech/css.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -20,10 +21,10 @@ import mysql from "./tech/mysql.png";
 import reactjs from "./tech/reactjs.png";
 import nextJs from "./tech/nextjs.svg";
 import angular from "./tech/angular.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 
+// ✅ Added Python
+import python from "./tech/python.png";
 
 export {
   logo,
@@ -36,6 +37,8 @@ export {
   demo,
   menu,
   close,
+
+  // Tech icons
   css,
   git,
   html,
@@ -47,9 +50,6 @@ export {
   reactjs,
   nextJs,
   angular,
-  redux,
   tailwind,
-  typescript,
- 
- 
+  python, // ← FIXED
 };
