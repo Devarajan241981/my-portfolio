@@ -2,12 +2,11 @@ import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Education from "./components/Education"; 
+import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Tech from "./components/Tech";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
-import { StarsCanvas } from "./components/canvas";
 import HireMe from "./components/HireMe";
 
 const App = () => {
@@ -18,15 +17,17 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
+
         <About />
-        <Education /> {/* <-- Education Section Here */}
+        <Education />
         <Experience />
         <Tech />
         <Works />
+
         <div className="relative z-0">
           <Contact />
-          {/* <StarsCanvas /> */}
         </div>
+
         <HireMe />
       </div>
     </BrowserRouter>

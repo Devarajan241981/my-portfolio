@@ -4,6 +4,9 @@ import { ComputersCanvas } from "./canvas";
 import { personalInfo } from "../constants";
 
 const Hero = () => {
+  const isMobile =
+    typeof window !== "undefined" && window.innerWidth <= 768;
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -13,20 +16,21 @@ const Hero = () => {
           <div className="w-5 h-5 rounded-full bg-electric-purple" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
+
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm{" "}
             <span className="text-electric-purple">{personalInfo.name}</span>
           </h1>
+
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
-            Software with Purpose!<br />
+            Software with Purpose!
           </p>
         </div>
       </div>
 
-      <ComputersCanvas />
-
-      {/* The scroll indicator (sphere) is REMOVED */}
+      {/* 3D Canvas disabled on mobile to prevent white-screen crash */}
+      {!isMobile && <ComputersCanvas />}
     </section>
   );
 };
