@@ -1,6 +1,5 @@
-// ===============================
-// 👉 Import assets
-// ===============================
+// src/constants/index.js
+
 import {
   mobile,
   backend,
@@ -21,17 +20,11 @@ import {
   python
 } from "../assets";
 
-// ===============================
-// 👉 Import project images
-// ===============================
 import fuelDelivery from "../assets/projects/fuel_delivery.png";
 import studentShowcase from "../assets/projects/student_showcase.png";
 import aura999 from "../assets/projects/aura999.png";
 import confidentialComputing from "../assets/projects/confidential_computing.png";
 
-// ===============================
-// 👉 Navigation paths
-// ===============================
 const navigationPaths = {
   home: "/",
   about: "about",
@@ -39,18 +32,12 @@ const navigationPaths = {
   contact: "contact",
 };
 
-// ===============================
-// 👉 Navbar links
-// ===============================
 export const navLinks = [
   { id: navigationPaths.about, title: "About" },
   { id: navigationPaths.work, title: "Experience" },
   { id: navigationPaths.contact, title: "Contact" },
 ];
 
-// ===============================
-// 👉 Services section
-// ===============================
 const services = [
   { title: "Web Developer", icon: web },
   { title: "Java Developer", icon: java },
@@ -58,15 +45,12 @@ const services = [
   { title: "Backend Developer", icon: backend },
 ];
 
-// ===============================
-// 👉 Technologies (Skills) section
-// ===============================
 const technologies = [
   { name: "HTML 5", icon: html },
   { name: "CSS 3", icon: css },
   { name: "JavaScript", icon: javascript },
   { name: "Java", icon: java },
-  { name: "Python", icon: python },       // ✅ Python icon included
+  { name: "Python", icon: python },
   { name: "React JS", icon: reactjs },
   { name: "Node JS", icon: nodejs },
   { name: "MongoDB", icon: mongodb },
@@ -74,9 +58,6 @@ const technologies = [
   { name: "Git", icon: git },
 ];
 
-// ===============================
-// 👉 Experience timeline
-// ===============================
 const experience = [
   {
     title: "B.E. Computer Science Engineering",
@@ -95,9 +76,7 @@ const experience = [
     icon: creator,
     iconBg: "#E6DEDD",
     date: "April 2022 | 75% CGPA",
-    points: [
-      "Completed core science subjects with strong results.",
-    ],
+    points: ["Completed core science subjects with strong results."],
   },
   {
     title: "10th Class",
@@ -105,15 +84,10 @@ const experience = [
     icon: creator,
     iconBg: "#E6DEDD",
     date: "March 2020 | 98% CGPA",
-    points: [
-      "Achieved top scores in board examinations.",
-    ],
+    points: ["Achieved top scores in board examinations."],
   },
 ];
 
-// ===============================
-// 👉 Projects section
-// ===============================
 const projects = [
   {
     name: "FUELnow - Fuel Delivery platform",
@@ -163,9 +137,6 @@ const projects = [
   },
 ];
 
-// ===============================
-// 👉 Personal Info
-// ===============================
 const personalInfo = {
   name: "Jai Chandra Kumar Devarajan",
   fullName: "Jai Chandra Kumar Devarajan",
@@ -178,9 +149,6 @@ Passionate about building efficient, modern web applications and contributing to
   projectsIntro: `Following projects showcase my skills and experience through real-world examples.`,
 };
 
-// ===============================
-// 👉 Public URLs (Resume + Socials)
-// ===============================
 const publicUrls = {
   resume: "/resume.pdf",
   socialProfiles: {
@@ -197,9 +165,7 @@ const publicUrls = {
   },
 };
 
-// ===============================
-// 👉 Export all
-// ===============================
+// ✅ FINAL EXPORT LIST — MUST INCLUDE EVERYTHING
 export {
   services,
   technologies,

@@ -1,3 +1,4 @@
+// src/assets/index.js
 
 import logo from "./logo.svg";
 import backend from "./backend.png";
@@ -10,6 +11,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import demo from "./demo.png";
 
+// Tech icons
 import css from "./tech/css.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -22,13 +24,10 @@ import reactjs from "./tech/reactjs.png";
 import nextJs from "./tech/nextjs.svg";
 import tailwind from "./tech/tailwind.png";
 
-// ✅ NEW — Correct Python icon
-import python from "./tech/python_icon_v2.png";
-
-
+// ✅ Updated Python icon (make sure this file exists: src/assets/tech/pythonlogo.png)
+import python from "./tech/pythonlogo.png";
 
 export {
-  // Main Icons
   logo,
   backend,
   creator,
@@ -39,8 +38,6 @@ export {
   demo,
   menu,
   close,
-
-  // Tech Icons
   css,
   git,
   html,
@@ -52,5 +49,5 @@ export {
   reactjs,
   nextJs,
   tailwind,
-  python,   
+  python,
 };
